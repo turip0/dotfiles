@@ -1,0 +1,21 @@
+# Pyprland plugin management tool.
+#  home.file.".config/hypr/pyprland.toml".source = (pkgs.formats.toml { }).generate "pyprland-config" {
+
+[pyprland]
+ plugins = ["wallpapers", "expose", "scratchpads"]
+
+[wallpapers]
+unique = true # set a different wallpaper for each screen
+path = "~/pictures/anastasia/"
+interval = 5 # change every hour
+extensions = ["jpg", "jpeg"]
+recurse = true
+clear_command = "swww clear"
+
+[expose]
+include_special = true
+
+[scratchpads.todo]
+command = "kitty --class kitty-todo -e python3 ~/downloads/hydrotodo.py"
+class = "kitty-todo"
+size = "45% 60%"

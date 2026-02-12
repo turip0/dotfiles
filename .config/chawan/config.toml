@@ -1,0 +1,28 @@
+[start]
+visual-home = "https://lite.duckduckgo.com/lite"
+[buffer]
+images = true
+mark-links = true
+[external]
+download-dir = "/home/turip/unorg/"
+bookmark = "/home/turip/.config/chawan/bookmarks.md"
+history-file = "/home/turip/.config/chawan/history.uri"
+history-size = 50
+[display]
+image-mode = "kitty"
+color-mode = "auto" #ansi, eight-bit, true-color
+# Search using DuckDuckGo Lite.
+# (This rule is included in the default config, although C-k invokes
+# Brave search.)
+[omnirule.ddg]
+match = '^ddg:'
+substitute-url = '(x) => "https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=" + encodeURIComponent(x.split(":").slice(1).join(":"))'
+[[siteconf]] # darkmode ?
+url = 'blah'
+user-style = '''
+*, *::before, *::after { color: revert !important; background-color: revert !important }
+'''
+[page]
+'S' = '() => pager.load("ddg:")' # search with ddgr
+'C-y' = 'copyURL'
+'C-s' = 'saveImage'

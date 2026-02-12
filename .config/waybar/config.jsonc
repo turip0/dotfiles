@@ -1,0 +1,224 @@
+{
+    "layer": "top", //on top of other windows
+    "position": "top", //(bottom|top|left|right)
+    "height": 25, // sets bar height
+    "spacing": 3, //space between modules (def=4)
+    "margin": "0 0 0 0", //no margins around
+    "name": "waybar",
+    "reload_style_on_change": true, 
+
+  "modules-left": [  //defines all modules on the left 
+//    "temperature",
+    "hyprland/workspaces",
+    "group/group-tools"
+    ],
+    "modules-center": [  //defines all modules on the center
+    "clock",
+    "hyprland/window"
+  ],
+   "modules-right": [  //defines all modules on the right
+    "custom/screenrecorder",
+//    "cava",
+//    "disk",
+    "pulseaudio",
+    "backlight",
+    "battery",
+    ],
+
+    //Modules Configuration
+//"custom/mpd": {
+//    "format": "♪ {}",
+//    //"max-length": 15,
+//    "interval": 10, 
+//    "exec": "mpc current", 
+//    "exec-if": "pgrep mpd",
+//    "on-click": "mpc toggle",
+//    "on-click-right": "sonata"
+//},
+
+      "group/group-tools":
+      {
+          "orientation": "inherit",
+          "drawer":
+          {
+              "transition-duration": 400,
+              "children-class": "other-apps",
+              "transition-left-to-right": true,
+              "click-to-reveal": true
+          },
+          "modules": [
+              "cpu",
+              "custom/pacman",
+              "custom/weather",
+              "network"
+          ]
+      },
+
+  "disk": {
+    "interval": 520,
+    "format": "<b> 󰋊  {percentage_used}󱉸</b>",
+    "path": "/"
+  },
+"hyprland/workspaces": {
+  "format": "{icon}",
+  "format-icons": {
+      "1": "󰲡 ",
+      "2": "󰲣 ",
+      "3": "󰲥 ",
+      "active": " "
+	},
+},
+"hyprland/window": {
+  "format": "{}",
+  "on-click": "dunstify \"$(hyprctl activewindow -j | jq -r .title)\"",
+  "rewrite": {
+      "": " ",
+      "(.*)turip@dell:(.*)": "$1   $2",
+      "(.*) - Brave": "󰖟 $1",
+      "nvim (.*)": "  $1",
+      "(.*) - kitty": "  $1",
+      "yt": " ",
+      "(.*) at DuckDuckGo": "󰖟  $1",
+      "DuckDuckGo": "󰖟 "
+    }
+  },
+"cava": {
+//  "cava_config": "~/.config/cava/config",
+  "bars": "8",
+  "hide_on_silent": true,
+  "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
+        "actions": {
+                   "on-click-right": "mode"
+                   }
+  },
+"pulseaudio": {
+    "format": "{volume}% {icon}",
+    "format-bluetooth": "{volume}% {icon}",
+    "format-muted": "",
+    "format-icons": {
+        "headphone": "",
+        "phone": "",
+        "phone-muted": "",
+        "portable": "",
+        "car": "",
+        "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "on-click": "pavucontrol",
+    "ignored-sinks": ["Easy Effects Sink"]
+},
+"custom/pacman": {
+	"format": "  {text}",
+  "format-alt": " ",
+	"exec": "checkupdates | wc -l",       // # of updates
+	"exec-if": "exit 0", 
+  "interval": 4000,// always run; consider advanced run conditions
+	"on-click": "kitty --dump-commands sudo pacman -Syu; pkill -SIGRTMIN+8 waybar", // update system
+	"signal": 8,
+  "tooltip": true,
+  "tooltip-format": "{text} updates (pacman)",
+  "on-click-right": "kitty --class silent --dump-commands bash /home/turip/.scripts/updates.sh"
+},
+  "custom/pipewire": {
+    "tooltip": false,
+    "max-length": 6,
+    "exec": "$HOME/.config/waybar/scripts/pipewire.sh",
+    "on-click": "pavucontrol",
+    "on-click-right": "qpwgraph"
+},
+  "custom/media": {
+    "format": "{icon} {}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 40,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl stop",
+    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+    "on-scroll-up": "playerctl next",
+    "on-scroll-down": "playerctl previous",
+    "exec": "$HOME/.config/waybar/scripts/mediaplayer.py 2> /dev/null", // Script in resources/custom_modules folder
+},
+ "temperature": {
+    // "thermal-zone": 2,
+    // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    "format-critical": "{temperatureC}°C ",
+    "format-alt": " {temperatureC}°C",
+    "format": ""
+},
+"network": {
+    "format": "{ifname}",
+    "format-alt": "{essid} ",
+    "format-wifi": "",
+    "format-ethernet": "{ipaddr}/{cidr} 󰊗",
+    "format-disconnected": "", //An empty format will hide the module.
+    "tooltip-format": "{essid} \n {ipaddr} || {signalStrength}% ",
+    "tooltip-format-wifi": "{essid} \n {ipaddr} || {signalStrength}% ",
+    "tooltip-format-ethernet": "{ifname} ",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50
+},
+"clock": {
+    "format": "󰅐  {:%H:%M}",
+    "format-alt": "  {0:%d/%m/%y} | 󰅐  {0:%H:%M}",
+    "timezone": "Europe/Athens",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+                    "mode"          : "month",
+                    "mode-mon-col"  : 3,
+                    "weeks-pos"     : "right",
+                    "on-scroll"     : 1,
+                    "timezone": "fr_FR.UTF-8",
+                    "format": {
+                              "months":     "<span color='#ffead3'><b>{}</b></span>",
+                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
+                              "weeks":      "<span color='#99ffdd'><b>{}</b></span>",
+                              "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
+                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
+                              }
+                    }
+  },
+"custom/screenrecorder": {
+    "exec": "$HOME/.config/waybar/scripts/screenrecorder status",
+    "interval": "once",
+    "signal": 1,
+    "return-type": "json",
+    "tooltip": true,
+    "format": "{}",
+    "on-click": "$HOME/.config/waybar/scripts/screenrecorder toggle fullscreen",
+    "on-click-right": "$HOME/.config/waybar/scripts/screenrecorder toggle region"
+},
+"custom/weather": {
+    "exec": "waybar-weather",
+    "restart-interval": 60,
+    "return-type": "json",
+    "hide-empty-text": true,
+    "on-click-right": "pkill -USR1 waybar-weather"
+},
+"backlight": {
+        "format": "{percent}% {icon}",
+        "format-icons": ["", "", "", "", "", "", "", "", ""],     
+        "on-scroll-up": "/home/turip/.config/waybar/scripts/brightnessoperation.sh +",
+        "on-scroll-down": "/home/turip/.config/waybar/scripts/brightnessoperation.sh -",
+        "tooltip": false
+},
+"battery": {
+    //"bat": "BAT2",
+    "interval": 60,
+    "states": {
+        "warning": 35,
+        "critical": 20
+    },
+    "format-critical": "{capacity}% 󰂃",
+    "format": "{capacity}% {icon}",
+    "format-icons": ["", "", "", "", ""],
+    "max-length": 25,
+    "tooltip-format": "{timeTo}"
+},
+"cpu": {
+  "interval": 15,
+  "format": "  {usage}%",
+}
+  //Loads modules 
+//    "include": ["/home/turip/.config/waybar/modules.json"],
+    }
