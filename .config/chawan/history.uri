@@ -1,6 +1,3 @@
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=how%20to%20check%20if%20a%20port%20is%20ssl%2Ftls
-https://www.isscloud.io/guides/how-to-using-openssl-to-verify-ssl-tls-connections/
-ddg:how to use $1 in bash
 https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=how%20to%20use%20%241%20in%20bash
 https://bash.cyberciti.biz/guide/$1
 https://stackoverflow.com/questions/29258603/what-do-0-1-2-mean-in-a-shell-script
@@ -44,7 +41,10 @@ https://ss64.com/bash/mapfile.html
 ddg:how to read a command output in bash
 ddg:color printf
 https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=color%20printf
-https://stackoverflow.com/questions/5412761/using-colors-with-the-printf-command
 ddg:how to use stow for dotfiles
 https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=how%20to%20use%20stow%20for%20dotfiles
 https://tamerlan.dev/how-i-manage-my-dotfiles-using-gnu-stow/
+ddg:how to add color to printf
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=how%20to%20add%20color%20to%20printf
+https://stackoverflow.com/questions/5412761/using-colors-with-the-printf-command
+https://nickjanetakis.com/blog/add-ansi-colors-to-your-shell-scripts-using-echo-printf-and-heredocs
