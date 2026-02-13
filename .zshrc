@@ -13,7 +13,6 @@ alias dotfiles="bash ~/.scripts/git.sh"
 alias tree='tree -C'
 alias la='lsd --all --sizesort'
 alias ls='lsd --sizesort'
-alias -="cd -"
 alias ..="cd .."
 alias ...="cd ../.."
 alias H='start-hyprland'
@@ -35,6 +34,7 @@ alias weather='curl wttr.in'
 alias bluetooth='bluetui'
 alias czkawka='bash /home/turip/.scripts/czkawka.sh'
 alias cc='clear'
+alias fetch="fastfetch --kitty-icat ~/.config/fastfetch/gengar.gif"
 alias wordle='clidle'
 alias z='fzf -m --preview="bat --color=always {}"'
 alias editz='nvim ~/.zshrc'
