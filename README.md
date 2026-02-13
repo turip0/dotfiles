@@ -1,9 +1,9 @@
-# Dotfiles
-## This are my dotfiles from my dell laptop running arch
+# This are my dotfiles from my dell laptop running arch
 
-Image examples:
-![Alt text](<images/1.png>)
-
+## Image examples
+![kitty + waybar](<images/1.png>)
+![dunst](<images/2.png>)
+## Installation
 To install run:
          
 ``` 
@@ -12,6 +12,7 @@ cd dotfiles
 ./install.sh
 ```
 
+## What's Included
 Dotfiles include:
 
 ```
