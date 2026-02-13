@@ -1,4 +1,8 @@
-# This are my dotfiles from my dell laptop running arch
+# Dotfiles
+## This are my dotfiles from my dell laptop running arch
+
+Image examples:
+![Alt text](<images/1.png>)
 
 To install run:
          
@@ -11,8 +15,32 @@ cd dotfiles
 Dotfiles include:
 
 ```
--> zshrc 
 -> custom scripts
--> gtk themes 
--> configs
+-> gtk themes
+-> zshrc 
+-> config
+   └ yazi
+   └ swayosd
+   └ cava
+   └ btop
+   └ hypr
+   └ chawan
+   └ fastfetch
+   └ zsh
+   └ discordo
+   └ nvim
+   └ termusic
+   └ aerc
+   └ chess-tui
+   └ dunst 
+   └ wofi 
+   └ kitty 
+   └ waybar
+   └ waybar-weather
+   └ gophertube
+   └ quickshell
+     └ overview
+   └ kwalletrc
+   └ starship.toml
+   
 ```
