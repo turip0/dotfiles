@@ -1,5 +1,4 @@
 #!/usr/bin/env zsh
-rm -rf ~/Thunderbird/
 # ---------------------- HISTORY SETTINGS ----------------------
 unset HISTFILE
 HISTSIZE=4999
@@ -10,8 +9,11 @@ setopt hist_find_no_dups
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ---------------------- BASIC ALIASES ----------------------
+alias dotfiles="bash ~/.scripts/git.sh"
+alias tree='tree -C'
 alias la='lsd --all --sizesort'
 alias ls='lsd --sizesort'
+alias -="cd -"
 alias ..="cd .."
 alias ...="cd ../.."
 alias H='start-hyprland'
@@ -31,7 +33,6 @@ alias /='cd /'
 alias discordo='DISCORDO_TOKEN="OTEzMDc2MzM2MTc4OTA1MDk5.G7lo9x.UEO7_-eh_Rc08V9Thb7_mg0CtGrNOMNeW-scws" discordo'
 alias weather='curl wttr.in'
 alias bluetooth='bluetui'
-alias bleach='bleachbit --clean --preset'
 alias czkawka='bash /home/turip/.scripts/czkawka.sh'
 alias cc='clear'
 alias wordle='clidle'
