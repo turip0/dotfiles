@@ -1,0 +1,23 @@
+[mgr]
+prepend_keymap = [
+  {on = [ "'", "s" ], run  = "plugin what-size", desc = "Calc size of selection or cwd"},
+  {on = "<C-y>", run = ["plugin copy-file-contents"], desc = "Copy contents of file"},
+  {on  = "M", run = "plugin mount", desc = "Mount manager"},
+  {on   = "+", run = "plugin zoom 1"},
+  {on = "-", run = "plugin zoom -1"},
+  {on   = [ "c", "m" ], run  = "plugin chmod"},
+  {on   = [ "c", "a" ], run  = "plugin compress", desc = "Archive selected files"},
+  
+]
+
+[manager]
+prepend_keymap = [
+  {on = [ "<C-t>" ], run = "plugin close-and-restore-tab restore", desc = "Restore the closed tab"},
+  {on = [ "<C-w>" ], run = "plugin close-and-restore-tab close_to_left", desc = "Close the current tab and turn to left tab, or quit if it is last tab"},
+  {on   = "O", run  = "plugin open-with-cmd", desc = "Open with command"},
+]
+
+[tasks]
+prepend_keymap = [
+  {on = [ "<S-Enter>" ], run = "open --interactive"},
+]

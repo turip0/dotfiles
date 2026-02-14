@@ -1,7 +1,7 @@
 #!/bin/bash
 CYAN="\e[0;36;1m"
 RESET="\e[0m"
-
+cd ~/dotfiles/
 mapfile -t stoww < <(pacman -Qqe | grep stow)
 case ${stoww[0]} in
 'stow') ;;
@@ -50,4 +50,7 @@ case $safe in
   stow .
   ;;
 esac
+rm -r images
+rm -r README.md
+cd -
 printf "\n \e[0;32;1m dotfiles symlinked successfully!! \e[0m"

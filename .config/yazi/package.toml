@@ -1,7 +1,72 @@
 [[plugin.deps]]
 use = "yazi-rs/plugins:mount"
-rev = "da5b695"
-hash = "e2d4bfccf31e5ab05f46fee4797c5215"
+rev = "88990a6"
+hash = "9ad20d763df07ce40fd09de549d914b0"
+
+[[plugin.deps]]
+use = "gesellkammer/audio-preview"
+rev = "74dfea3"
+hash = "6f185a283a3756475272d147a3c1d29c"
+
+[[plugin.deps]]
+use = "Sonico98/exifaudio"
+rev = "4506f9d"
+hash = "4761fffb60a12d37096c34a356380cdf"
+
+[[plugin.deps]]
+use = "macydnah/office"
+rev = "41ebef8"
+hash = "5805affd3ae8adcb3c72b6997d21c0a6"
+
+[[plugin.deps]]
+use = "AminurAlam/yazi-plugins:preview-git"
+rev = "f3608de"
+hash = "52f20cafe2faf4901910ef77da8956e8"
+
+[[plugin.deps]]
+use = "kirasok/torrent-preview"
+rev = "f465282"
+hash = "d849ad596b8a77902e62a42403aeba40"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:zoom"
+rev = "88990a6"
+hash = "6ce49cf5b4c7c0d9cce8a1062ed478d3"
+
+[[plugin.deps]]
+use = "yazi-rs/plugins:chmod"
+rev = "88990a6"
+hash = "8da0b15a97b5dfd13941d1ecc617ac7c"
+
+[[plugin.deps]]
+use = "KKV9/archive"
+rev = "cb6e8ec"
+hash = "424ada4807b20ccd4fc85d1d7c26d1e4"
+
+[[plugin.deps]]
+use = "pirafrank/what-size"
+rev = "179ebf6"
+hash = "57056b9728006881d580ccabe8154a9c"
+
+[[plugin.deps]]
+use = "MasouShizuka/close-and-restore-tab"
+rev = "5047217"
+hash = "bb24648b1f96f1cef8c1543742189aad"
+
+[[plugin.deps]]
+use = "AnirudhG07/plugins-yazi:copy-file-contents"
+rev = "71545f4"
+hash = "f8530ee84fee95dbcc26bb1d8d8019c7"
+
+[[plugin.deps]]
+use = "Ape/open-with-cmd"
+rev = "e3d430f"
+hash = "d29c1ffa99099181faf8c01d1f59aa4c"
+
+[[plugin.deps]]
+use = "boydaihungst/mediainfo"
+rev = "8ab04b2"
+hash = "bdd196f71aa3e6aa02d1b1d6cad22424"
 
 [[flavor.deps]]
 use = "yazi-rs/flavors:catppuccin-mocha"
