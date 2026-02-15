@@ -1,6 +1,6 @@
 # This are my dotfiles from my dell laptop running arch
 
-$${\color{red} ## Image examples}$$
+## Image examples
 <details>
 <summary><strong>Kitty + waybar</strong></summary>
 <p>
@@ -24,6 +24,11 @@ git clone https://github.com/turip0/dotfiles.git
 cd dotfiles
 ./install.sh
 ```
+
+> [!IMPORTANT]
+> This are my own files uploaded as a backup
+> Before installing please check if they fit your needs 
+> I am not responsible if anything breaks
 
 ## What's Included
 Dotfiles include:
