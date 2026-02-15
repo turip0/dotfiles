@@ -1,6 +1,6 @@
 # This are my dotfiles from my dell laptop running arch
 
-## Image examples
+## $\color{green}{$Image examples}
 <details>
 <summary><strong>Kitty + waybar</strong></summary>
 <p>
@@ -27,7 +27,7 @@ cd dotfiles
 
 > [!IMPORTANT]
 > This are my own files uploaded as a backup
-> Before installing please check if they fit your needs 
+> Before installing please check if they fit your needs \n
 > I am not responsible if anything breaks
 
 ## What's Included
