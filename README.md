@@ -1,4 +1,4 @@
-# This are my dotfiles from my dell laptop running arch
+# $\textcolor{magenta}{This\ are\ my\ dotfiles\ from\ my\ dell\ laptop\ running\ arch}$
 
 ## $\textcolor{purple}{Images\ examples}$
 <details>
@@ -16,7 +16,7 @@
 </p>
 </details>
 
-## Installation
+## $\textcolor{yellow}{Installation}$
 To install run:
          
 ``` 
@@ -30,7 +30,7 @@ cd dotfiles
 > Before installing please check if they fit your needs \n
 > I am not responsible if anything breaks
 
-## What's Included
+## $\textcolor{yellow}{What's\ included}$
 Dotfiles include:
 
 ```
