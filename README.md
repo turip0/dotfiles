@@ -1,6 +1,6 @@
-# $\textcolor{magenta}{This\ are\ my\ dotfiles\ from\ my\ dell\ laptop\ running\ arch}$
+# This are my dotfiles from my dell laptop running arch
 
-## $\textcolor{purple}{Images\ examples}$
+## $\textcolor{yellow}{Images\ examples}$
 <details>
 <summary><strong>Kitty + waybar</strong></summary>
 <p>
