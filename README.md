@@ -3,12 +3,19 @@
 ## Image examples
 <details>
 <summary><strong>Kitty + waybar</strong></summary>
+<p>
+
 ![kitty + waybar](<images/1.png>)
+</p>
 </details>
 <details>
 <summary><strong>Dunst</strong></summary>
+<p>
+
 ![dunst](<images/2.png>)
+</p>
 </details>
+
 ## Installation
 To install run:
          
