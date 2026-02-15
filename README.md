@@ -1,6 +1,6 @@
 # This are my dotfiles from my dell laptop running arch
 
-## Image examples
+## $\textcolor{purple}{Images\ examples}$
 <details>
 <summary><strong>Kitty + waybar</strong></summary>
 <p>
@@ -64,5 +64,5 @@ Dotfiles include:
    └ starship.toml
 ```
 
-## $\textcolor{yellow}{This\ is\ a\ Big\ Title}$
+
 
