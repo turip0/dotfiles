@@ -36,7 +36,8 @@ Dotfiles include:
    └ zsh
    └ discordo
    └ nvim
-   └ termusic
+   └ rmpc
+   └ mpd
    └ aerc
    └ chess-tui
    └ dunst 
@@ -49,5 +50,4 @@ Dotfiles include:
      └ overview
    └ kwalletrc
    └ starship.toml
-   
 ```

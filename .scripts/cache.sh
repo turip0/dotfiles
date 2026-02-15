@@ -11,6 +11,7 @@ sudo pacman -Rns $(pacman -Qtdq)
 
 # Clean the cache in your /home directory
 sudo rm -rf ~/.cache/*
+rm -rf ~/.local/share/Trash/
 rm -r ~/Thunderbird/ ~/Desktop/
 # Remove old logs
 sudo journalctl --vacuum-size=50M

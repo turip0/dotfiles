@@ -50,7 +50,7 @@ case $safe in
   stow .
   ;;
 esac
-rm -r images
-rm -r README.md
+# rm -r images
+rm ~/README.md
 cd -
 printf "\n \e[0;32;1m dotfiles symlinked successfully!! \e[0m"

@@ -1,0 +1,166 @@
+#![enable(implicit_some)]
+#![enable(unwrap_newtypes)]
+#![enable(unwrap_variant_newtypes)]
+(
+// address: "/tmp/mpd_socket",
+cache_dir: None,
+theme: Some("~/dotfiles/.config/rmpc/theme.ron"),
+cava: (
+    framerate: 60, // default 60
+    autosens: true, // default true
+    sensitivity: 100, // default 100
+    lower_cutoff_freq: 50, // not passed to cava if not provided
+    higher_cutoff_freq: 10000, // not passed to cava if not provided
+    input: (
+        method: Fifo,
+        source: "/tmp/mpd.fifo",
+        sample_rate: 44100,
+        channels: 2,
+        sample_bits: 16,
+    ),
+    smoothing: (
+        noise_reduction: 77, // default 77
+        monstercat: false, // default false
+        waves: false, // default false
+    ),
+),
+keybinds: (
+  global: {
+    ".": NextTrack,
+    ",": PreviousTrack,
+    ">": VolumeUp,
+    "<": VolumeDown,
+    "R": Rescan,
+    "<Space>": TogglePause,
+  },
+  queue: {
+    "r": Shuffle,
+  },
+),
+volume_step: 5,
+enable_mouse: false,
+on_song_change: ["~/.config/rmpc/notify"],
+search: (
+  case_sensitive: false,
+  mode: Contains,
+        tags: [
+            (value: "any",         label: "Any Tag"),
+            (value: "artist",      label: "Artist"),
+            (value: "album",       label: "Album"),
+            (value: "title",       label: "Title"),
+        ],
+),
+ignore_leading_the: true,
+    tabs: [
+        (
+            name: "Queue",
+            pane: Split(
+                direction: Horizontal,
+                panes: [
+                    (
+                        size: "35%",
+                        pane: Split(
+                            direction: Vertical,
+                            panes: [
+                                (
+                                    size: "100%",
+                                    borders: "ALL",
+                                    border_symbols: Rounded,
+                                    pane: Pane(AlbumArt)
+                                ),
+                            ],
+                        ),
+                    ),
+                    (
+                        size: "65%",
+                        pane: Split(
+                            direction: Vertical,
+                            panes: [
+                                (
+                                    size: "3",
+                                    borders: "ALL",
+                                    border_symbols: Inherited(parent: Rounded, bottom_left: "├", bottom_right: "┤",),
+                                    pane: Split(
+                                        direction: Horizontal,
+                                        panes: [
+                                            (
+                                                size: "1",
+                                                pane: Pane(Empty())
+                                            ),
+                                            (
+                                                size: "100%",
+                                                pane: Pane(QueueHeader())
+                                            ),
+                                        ]
+                                    )
+                                ),
+                                (
+                                    size: "100%",
+                                    borders: "LEFT | RIGHT | BOTTOM",
+                                    border_symbols: Rounded,
+                                    pane: Split(
+                                        direction: Horizontal,
+                                        panes: [
+                                            (
+                                                size: "1",
+                                                pane: Pane(Empty())
+                                            ),
+                                          (
+                                            size: "100%",
+                                            border_symbols: Rounded,
+                                            pane: Split(
+                                              direction: Vertical,
+                                              panes: [
+                                                (
+                                                  size: "100%",
+                                                  pane: Pane(Queue)
+                                                 ),
+                                                 (
+                                                 size: "30%",
+                                                 borders: "TOP",
+                                                 pane: Pane(Cava),
+                                                 ),
+                                              ],
+                                            ),
+                                          ),
+                                        ]
+                                    )
+                                ),
+                            ],
+                        )
+                    ),
+                ],
+            ),
+        ),
+        (
+            name: "Directories",
+            borders: "ALL",
+            border_symbols: Rounded,
+            pane: Split(
+                size: "100%",
+                direction: Vertical,
+                panes: [(pane: Pane(Directories), size: "100%", borders: "ALL", border_symbols: Rounded)],
+            )
+        ),
+        (
+            name: "Artists",
+            borders: "ALL",
+            border_symbols: Rounded,
+            pane: Split(
+                size: "100%",
+                direction: Vertical,
+                panes: [(pane: Pane(Artists), size: "100%", borders: "ALL", border_symbols: Rounded)],
+            )
+        ),
+        (
+            name: "Search",
+            borders: "ALL",
+            border_symbols: Rounded,
+            pane: Split(
+                size: "100%",
+                direction: Vertical,
+                panes: [(pane: Pane(Search), size: "100%", borders: "ALL", border_symbols: Rounded)],
+            )
+        ),
+    ],
+)
