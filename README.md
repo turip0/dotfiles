@@ -1,6 +1,6 @@
 # This are my dotfiles from my dell laptop running arch
 
-## $\color{green}{$Image examples}
+## $\color{green}{$Image examples}$
 <details>
 <summary><strong>Kitty + waybar</strong></summary>
 <p>
