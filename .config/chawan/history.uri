@@ -1,43 +1,3 @@
-https://www.baeldung.com/ops/java-git-src-refspec-match
-ddg:meassege
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=meassege
-ddg:how to change fonts in arch
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=how%20to%20change%20fonts%20in%20arch
-https://www.reddit.com/r/archlinux/comments/10fxqqs/how_to_change_the_default_font/
-https://thelinuxcode.com/arch_linux_fonts/
-https://wiki.archlinux.org/title/Font_configuration
-ddg:pixel font .ttf
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=pixel%20font%20.ttf
-https://www.1001fonts.com/pixel-fonts.html
-https://www.1001fonts.com/pixel-fonts.html?page=2
-https://www.1001fonts.com/pixel-fonts.html?page=3
-https://www.1001fonts.com/download/jersey.zip
-https://www.1001fonts.com/pixel-fonts.html?page=4
-ddg:nerd fonts pixel
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=nerd%20fonts%20pixel
-https://www.nerdfonts.com/
-https://www.nerdfonts.com/font-downloads
-ddg:how to update a repo from terminal
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=how%20to%20update%20a%20repo%20from%20terminal
-ddg:best yazi addons
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=best%20yazi%20addons
-https://github.com/AnirudhG07/awesome-yazi
-https://github.com/ahkohd/eza-preview.yazi
-https://github.com/Reledia/glow.yazi
-https://github.com/pirafrank/what-size.yazi
-https://github.com/MasouShizuka/close-and-restore-tab.yazi
-https://github.com/AnirudhG07/plugins-yazi/tree/main/copy-file-contents.yazi
-ddg:best cli for music
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=best%20cli%20for%20music
-https://itsfoss.gitlab.io/post/top-6-command-line-music-players-for-linux-users/
-https://www.howtogeek.com/listen-to-music-in-the-linux-terminal-with-these-apps/
-https://www.slant.co/topics/2429/~best-command-line-music-players
-ddg:how to configure rmpc
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=how%20to%20configure%20rmpc
-https://rmpc.mierak.dev/next/configuration/
-https://github.com/mierak/rmpc
-https://rmpc.mierak.dev/
-https://rmpc.mierak.dev/configuration/
 ddg:where is mpd music directory
 https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=where%20is%20mpd%20music%20directory
 https://wiki.archlinux.org/title/Music_Player_Daemon
@@ -48,3 +8,43 @@ https://defkey.com/rusty-music-player-client-rmpc-0-10-shortcuts
 ddg:how to get notified for low battery in hyprland
 https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=how%20to%20get%20notified%20for%20low%20battery%20in%20hyprland
 https://www.reddit.com/r/hyprland/comments/1b5hldx/what_do_you_use_for_low_battery_warnings_on/
+https://github.turip0.dotfiles/
+https://github.com/turip0/dotfiles
+ddg:github-cli
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=github-cli
+https://cli.github.com/
+https://github.com/cli/cli#installation
+ddg:clear brave cache from terminal
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=clear%20brave%20cache%20from%20terminal
+https://itsfoss.gitlab.io/post/how-to-clear-web-browser-cache-from-commandline-in-linux/
+ddg:skip bootloader for a user in systemd
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=skip%20bootloader%20for%20a%20user%20in%20systemd
+https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_systemd_unit_files_to_customize_and_optimize_your_system/optimizing-systemd-to-shorten-the-boot-time
+ddg:how to disable boot for a user in systemd boot
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=how%20to%20disable%20boot%20for%20a%20user%20in%20systemd%20boot
+ddg:disable boot for a user 
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=disable%20boot%20for%20a%20user%20
+ddg:how to disable bootloader for a user in arch
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=how%20to%20disable%20bootloader%20for%20a%20user%20in%20arch
+https://superuser.com/questions/1093157/disable-the-booting-message-in-arch-linux-grub
+https://bbs.archlinux.org/viewtopic.php?id=191952
+ddg:skip bootloader for systemd
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=skip%20bootloader%20for%20systemd
+https://www.heise.de/en/news/FOSDEM-25-Booting-without-bootloader-10267103.html
+ddg:fastest browser for linux
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=fastest%20browser%20for%20linux
+https://www.zdnet.com/home-and-office/work-life/i-speed-tested-11-browsers-and-the-fastest-might-surprise-you/
+https://linuxstans.com/best-linux-browsers/
+https://linuxvox.com/blog/fastest-linux-browser/
+https://designunix.com/blog/7-best-lightweight-browser-for-linux
+ddg:qute browser
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=qute%20browser
+ddg:is qute browser fast
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=is%20qute%20browser%20fast
+https://technicalustad.com/lightweight-browser/
+https://www.trapeza-thematon.gr/Mathima/5?handler=AllThemata
+https://www.trapeza-thematon.gr/
+https://www.trapeza-thematon.gr/Thema/14123
+https://www.trapeza-thematon.gr/Thema/14615
+https://www.trapeza-thematon.gr/Thema/14654
+https://redlib.tiekoetter.com/r/qutebrowser/comments/omlzuv/store_cookies_for_specific_websites_and_delete/

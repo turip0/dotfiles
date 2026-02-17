@@ -9,58 +9,74 @@ setopt hist_find_no_dups
 source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # ---------------------- BASIC ALIASES ----------------------
+#scripts#
 alias dotfiles="bash ~/.scripts/git.sh"
+alias trapeza="bash ~/.scripts/www/trapeza.sh"
+alias otw="bash ~/.scripts/www/otw.sh"
+alias todo='python3 /home/turip/downloads/hydrotodo.py'
+alias qqe="bash /home/turip/.scripts/qqe.sh"
+alias cache='bash /home/turip/.scripts/cache.sh'
+alias du="bash /home/turip/.scripts/du.sh"
+
+#basic#
 alias tree='tree -C'
 alias la='lsd --all --sizesort'
 alias ls='lsd --sizesort'
 alias ..="cd .."
 alias ...="cd ../.."
+alias /='cd /'
+alias rm='rm -r'
+alias unrar='unrar-free'
+alias icat="kitten icat"
+alias mkdir='mkdir -p'
+
+#extra#
+alias decomp= "jkazip -d"
+alias sourcez="source /home/turip/.zshrc"
+alias setb='brightnessctl set'
+alias fonts="fc-list : family"
+alias trash='sudo rm -rf /home/.Trash-0'
+
+#quick#
 alias H='start-hyprland'
 alias q='exit'
+alias off="sudo shutdown now"
+alias cc='clear'
+
+#packages#
 alias s='sudo pacman -S'
 alias r='sudo pacman -Rns'
 alias ss="yay -S"
-alias du="sudo du -sh /"
-alias unrar='unrar-free'
-alias sourcez="source /home/turip/.zshrc"
-alias rm='rm -r'
-alias bnd='nvim ~/bandit'
-alias setb='brightnessctl set'
-alias timer='tclock --color magenta timer -d'
-alias clock='tclock --color magenta'
-alias /='cd /'
+alias yaya='yay'
+
+#cd#
+alias scripts="cd ~/.scripts"
+alias conf='cd ~/.config'
+alias hypr='cd ~/.config/hypr/'
+alias unorg="cd ~/unorg"
+alias dots='dotfiles'
 alias discordo='DISCORDO_TOKEN="OTEzMDc2MzM2MTc4OTA1MDk5.G7lo9x.UEO7_-eh_Rc08V9Thb7_mg0CtGrNOMNeW-scws" discordo'
 alias weather='curl wttr.in'
 alias bluetooth='bluetui'
-alias czkawka='bash /home/turip/.scripts/czkawka.sh'
-alias cc='clear'
+
+#programs#
+alias timer='tclock --color magenta timer -d'
+alias clock='tclock --color magenta'
 alias fetch="fastfetch --kitty-icat ~/.config/fastfetch/gengar.gif"
 alias wordle='clidle'
-alias z='fzf -m --preview="bat --color=always {}"'
-alias editz='nvim ~/.zshrc'
-alias edithypr='nvim ~/.config/hypr/hyprland.conf'
-alias conf='cd ~/.config'
-alias hypr='cd ~/.config/hypr/'
-alias yaya='yay'
-alias www="cha -V"
-alias trapeza="bash ~/.scripts/www/trapeza.sh"
-alias otw="bash ~/.scripts/www/otw.sh"
-alias fonts="fc-list : family"
 alias yt="gophertube -d ~/unorg/"
-alias todo='python3 /home/turip/downloads/hydrotodo.py'
 alias chess='chess-tui -l lip_GxzwKvkEQBE0VDhe6qbW -e "/usr/bin/gnuchess --uci"'
 alias mines="tui-mines"
-alias decomp= "jkazip -d"
-alias mc="cd ~/downloads/xmcl && ./xmcl &"
-alias icat="kitten icat"
-alias ytdl="youtube-dl --no-cache-dir"
-alias mkdir='mkdir -p'
-alias update-grub='grub-mkconfig -o /boot/grub/grub.cfg'
-alias qqe="bash /home/turip/.scripts/qqe.sh"
-alias off="sudo shutdown now"
 alias insta='instagram-cli chat  -u anastasiapsalti'
-alias trash='sudo rm -rf /home/.Trash-0'
-alias cache='bash /home/turip/.scripts/cache.sh'
+alias www="cha -V"
+alias ytdl="youtube-dl --no-cache-dir"
+alias z='fzf -m --preview="bat --color=always {}"'
+
+#edit#
+alias editz='nvim ~/.zshrc'
+alias edithypr='nvim ~/.config/hypr/hyprland.conf'
+alias bnd='nvim ~/bandit'
+
 #------------------------------------------------------------
 export EDITOR="nvim"
 export VISUAL="nvim"
