@@ -1,6 +1,6 @@
 # This are my dotfiles from my dell laptop running arch
 
-## $\textcolor{yellow}{Images\ examples}$
+## $\textcolor{blue}{Images\ examples}$
 <details>
 <summary><strong>Kitty + waybar</strong></summary>
 <p>
@@ -24,7 +24,7 @@
 </details>
 
 
-## $\textcolor{yellow}{Installation}$
+## $\textcolor{blue}{Installation}$
 To install run:
          
 ``` 
@@ -34,11 +34,11 @@ cd dotfiles
 ```
 
 > [!IMPORTANT]
-> This are my own files uploaded as a backup
-> Before installing please check if they fit your needs \n
+> This are my own files uploaded as a backup.
+> Before installing please check if they fit your needs.
 > I am not responsible if anything breaks
 
-## $\textcolor{yellow}{What's\ included}$
+## $\textcolor{blue}{What's\ included}$
 Dotfiles include:
 
 ```

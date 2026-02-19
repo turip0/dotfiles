@@ -14,5 +14,6 @@ printf "\033[0;36mWhat should the commit message be? \e[0m"
 read -r MESSAGE
 git commit -a -m "$MESSAGE"
 printf "\n \033[0;36mRemember!! \n Username: turip0 \n Password: You have to make a token!! \n \e[0m"
+printf "\033[0;36m$(cat ~/.token)\n\e[0m"
 git push origin main
 cd -
