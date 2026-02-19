@@ -5,16 +5,24 @@
 <summary><strong>Kitty + waybar</strong></summary>
 <p>
 
-![kitty + waybar](<images/1.png>)
+![kitty + waybar](<images/waybar+kitty.png>)
 </p>
 </details>
 <details>
 <summary><strong>Dunst</strong></summary>
 <p>
 
-![dunst](<images/2.png>)
+![dunst](<images/dunst.png>)
 </p>
 </details>
+<details>
+<summary><strong>Wlogout</strong></summary>
+<p>
+
+![wlogout](<images/wlogout.png>)
+</p>
+</details>
+
 
 ## $\textcolor{yellow}{Installation}$
 To install run:
@@ -38,30 +46,6 @@ Dotfiles include:
 -> gtk themes
 -> zshrc 
 -> config
-   └ yazi
-   └ swayosd
-   └ cava
-   └ btop
-   └ hypr
-   └ chawan
-   └ fastfetch
-   └ zsh
-   └ discordo
-   └ nvim
-   └ rmpc
-   └ mpd
-   └ aerc
-   └ chess-tui
-   └ dunst 
-   └ wofi 
-   └ kitty 
-   └ waybar
-   └ waybar-weather
-   └ gophertube
-   └ quickshell
-     └ overview
-   └ kwalletrc
-   └ starship.toml
 ```
 
 

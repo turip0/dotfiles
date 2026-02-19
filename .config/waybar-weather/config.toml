@@ -107,7 +107,7 @@
 
 ## Primary text template used for output rendering.
 #
- text = "{{.Current.Temperature}} {{.Current.Units.Temperature}}"
+ text = "󰅟 {{.Current.Temperature}}{{.Current.Units.Temperature}}"
 
 ## Alternative text template.
 #

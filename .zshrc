@@ -91,7 +91,7 @@ plugins=(
 #setup-starship
   eval "$(starship init zsh)"
 #setup-Homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
+# eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv zsh)"
 
 #########Atuin################
 . "$HOME/.atuin/bin/env"

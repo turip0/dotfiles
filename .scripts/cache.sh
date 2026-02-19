@@ -5,6 +5,8 @@ sudo yay -Scc
 sudo paccache -r
 sudo rm -rf ~/go/pkg
 flatpak uninstall --unused
+sudo flatpak repair
+rm ~/pictures/screenshots/*.log
 brew cleanup
 # Remove unused packages (orphans)
 sudo pacman -Rns $(pacman -Qtdq)

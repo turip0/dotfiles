@@ -1,19 +1,31 @@
 @import "colors.css";
 
 * {
-    color: @mauve;
+    color:  @overlay;
     border: 0;
+    opacity: 0.97;
     padding: 0 0;
-    font-family: "Fira Nerd Regular";
+    font-family: "DepartureMono Nerd Font";
 }
 
 window#waybar {
     border: 0px solid rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
+    background-color:transparent;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+#workspaces {
+  background-color: transparent;
+  margin: 0px 0px;
+  border-radius: 12px;
+  padding: 0;
+  opacity: 0.8;
+  transition: all 150ms ease-in-out;
 }
 tooltip {
-  background: rgba(58, 0, 76, 0.93);
-  border: 1px solid rgba(100, 114, 125, 0.5);
+  background: rgba(24,24,37,1.000);
+  border: 1px solid @mantle;
+  font-family: "FiraCode Nerd Font";
 }
 .waybar-weather {
     animation-timing-function: linear;
@@ -36,3 +48,80 @@ tooltip {
     animation-duration: 1s;
 }
 
+#clock, #window, #group-grouptools {
+  margin: 2px 2px 2px 2px;
+  border-radius: 15px;
+  border: 1px solid @overlay;
+  background-color: @mantle;
+  padding: 0px 10px 0px 10px;
+}
+
+.modules-right {
+  margin: 2px 5px 2px 5px;
+  border-radius: 15px;
+  border: 1px solid @overlay;
+  background-color: @mantle;
+  padding: 0px 10px 0px 10px;
+}
+#custom-screenrecorder {
+  padding: 0px 10px 0px 0px;
+}
+#backlight {
+  padding: 0px 5px 0px 5px;
+}
+#battery {
+  padding: 0px 8px 0px 5px;
+}
+#battery.warning {
+  color: @yellow;
+}
+#battery.critical {
+  color: @red;
+}
+
+.modules-left {
+  margin: 2px 0px 2px 5px;
+  border-radius: 15px;
+  border: 1px solid @overlay;
+  background-color: @mantle;
+  padding: 0px 10px 0px 10px;
+}
+
+#cpu, #custom-pacman, #custom-weather, #network {
+  padding: 0px 5px 0px 5px;
+}
+
+#workspaces button {
+    box-shadow: none;
+    text-shadow: none;
+    padding: 0px;
+    border-radius: 8px;
+    margin-left: 0px;
+    padding-left: 3px;
+    padding-right: 3px;
+    margin-right: 0px;
+    color: @green;
+    animation: ws_normal 20s ease-in-out 1;
+}
+
+#workspaces button.active {
+    background: @mantle;
+    color: @green;
+    border-radius:  15pt;
+    margin-left: 0px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-right: 0px;
+    animation: ws_active 10s ease-in-out 1;
+    transition: all 0.4s cubic-bezier(.15,-0.68,.18,1.682);
+}
+#workspaces button.visible {
+  color: @overlay;
+}
+
+#workspaces button:hover {
+    background: @mantle;
+    color: @green;
+    animation: ws_hover 10s ease-in-out 1;
+    transition: all 0.3s cubic-bezier(.15,-0.68,.18,1.682);
+}

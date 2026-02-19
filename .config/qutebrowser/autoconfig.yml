@@ -6,9 +6,19 @@
 
 config_version: 2
 settings:
-  colors.completion.category.fg:
-    global: white
-  content.blocking.whitelist:
+  colors.downloads.system.bg:
+    global: hsl
+  colors.hints.bg:
+    global: '#94e2d5'
+  colors.hints.fg:
+    global: '#181825'
+  colors.hints.match.fg:
+    global: '#f5e0dc'
+  colors.tabs.bar.bg:
+    global: rgba(0,0,0,0)
+  colors.webpage.bg:
     global: null
-  content.cookies.accept:
-    global: all
+  colors.webpage.darkmode.policy.images:
+    global: always
+  colors.webpage.darkmode.policy.page:
+    global: always

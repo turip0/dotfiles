@@ -1,5 +1,5 @@
 [start]
-visual-home = "https://lite.duckduckgo.com/lite"
+visual-home = "https://searx.dresden.network/"
 [buffer]
 images = true
 mark-links = true
@@ -15,7 +15,7 @@ color-mode = "auto" #ansi, eight-bit, true-color
 # (This rule is included in the default config, although C-k invokes
 # Brave search.)
 [omnirule.ddg]
-match = '^ddg:'
+match = '^searx:'
 substitute-url = '(x) => "https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=" + encodeURIComponent(x.split(":").slice(1).join(":"))'
 [[siteconf]] # darkmode ?
 url = 'blah'
@@ -23,6 +23,6 @@ user-style = '''
 *, *::before, *::after { color: revert !important; background-color: revert !important }
 '''
 [page]
-'S' = '() => pager.load("ddg:")' # search with ddgr
+'S' = '() => pager.load("searx:")' # search with ddgr
 'C-y' = 'copyURL'
 'C-s' = 'saveImage'

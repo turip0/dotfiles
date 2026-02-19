@@ -10,13 +10,14 @@
   "modules-left": [  //defines all modules on the left 
 //    "temperature",
     "hyprland/workspaces",
-    "group/group-tools"
+    "group/grouptools"
     ],
     "modules-center": [  //defines all modules on the center
     "clock",
     "hyprland/window"
   ],
    "modules-right": [  //defines all modules on the right
+    "tray",
     "custom/screenrecorder",
 //    "cava",
 //    "disk",
@@ -36,7 +37,7 @@
 //    "on-click-right": "sonata"
 //},
 
-      "group/group-tools":
+      "group/grouptools":
       {
           "orientation": "inherit",
           "drawer":
@@ -60,21 +61,34 @@
     "path": "/"
   },
 "hyprland/workspaces": {
-  "format": "{icon}",
-  "format-icons": {
-      "1": "󰲡 ",
-      "2": "󰲣 ",
-      "3": "󰲥 ",
-      "active": " "
-	},
-},
+      "format": "{name}",
+       "format-icons": {
+      "1": "*",
+      "2": "*",
+      "3": "*",
+      "4": "*",
+      "5": "*",
+      "6": "*",
+      "7": "*",
+      "8": "*",
+      "9": "*",
+      "10": "*",
+      "urgent": "*",
+      "active": "*",
+      "default": "*",
+    },
+    "on-click": "activate",
+       "persistent-workspaces": {
+             "*": 1
+      }
+  },
 "hyprland/window": {
   "format": "{}",
   "on-click": "dunstify \"$(hyprctl activewindow -j | jq -r .title)\"",
   "rewrite": {
       "": " ",
       "(.*)turip@dell:(.*)": "$1   $2",
-      "(.*) - qutebrowser ": "󰖟 $1",
+      "(.*)- qutebrowser": "󰖟 $1",
       "nvim (.*)": "  $1",
       "(.*) - kitty": "  $1",
       "yt": " ",
@@ -109,7 +123,7 @@
     "ignored-sinks": ["Easy Effects Sink"]
 },
 "custom/pacman": {
-	"format": "  {text}",
+	"format": " {text}",
   "format-alt": " ",
 	"exec": "checkupdates | wc -l",       // # of updates
 	"exec-if": "exit 0", 
@@ -150,7 +164,7 @@
 "network": {
     "format": "{ifname}",
     "format-alt": "{essid} ",
-    "format-wifi": "",
+    "format-wifi": " ",
     "format-ethernet": "{ipaddr}/{cidr} 󰊗",
     "format-disconnected": "", //An empty format will hide the module.
     "tooltip-format": "{essid} \n {ipaddr} || {signalStrength}% ",
@@ -159,6 +173,13 @@
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50
 },
+"tray": {
+    "icon-size": 12,
+    "spacing": 10,
+    "icons": {
+        "blueman": "bluetooth",
+    }
+  },
 "clock": {
     "format": "󰅐  {:%H:%M}",
     "format-alt": "  {0:%d/%m/%y} | 󰅐  {0:%H:%M}",
@@ -218,7 +239,7 @@
 },
 "cpu": {
   "interval": 15,
-  "format": "  {usage}%",
+  "format": " {usage}%",
 }
   //Loads modules 
 //    "include": ["/home/turip/.config/waybar/modules.json"],
