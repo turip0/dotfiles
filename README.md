@@ -43,8 +43,7 @@ Dotfiles include:
 
 ```
 -> custom scripts
--> gtk themes
--> zshrc 
+-> zshrc
 -> config
 ```
 
