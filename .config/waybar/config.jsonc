@@ -95,7 +95,8 @@
       "(.*) at DuckDuckGo": "󰖟  $1",
       "rmpc": "󰎇 ",
       "DuckDuckGo": "󰖟 "
-    }
+    },
+  "tooltip": false,
   },
 "cava": {
 //  "cava_config": "~/.config/cava/config",

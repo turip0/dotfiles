@@ -21,3 +21,8 @@ prepend_keymap = [
 prepend_keymap = [
   {on = [ "<S-Enter>" ], run = "open --interactive"},
 ]
+
+[mgr]
+  prepend_keymap = [
+    { on = "<F1>", run = "plugin mediainfo -- toggle-metadata", desc = "Toggle media preview metadata" },
+  ]

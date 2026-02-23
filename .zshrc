@@ -33,9 +33,12 @@ alias mkdir='mkdir -p'
 #extra#
 alias decomp= "jkazip -d"
 alias sourcez="source /home/turip/.zshrc"
-alias setb='brightnessctl set'
 alias fonts="fc-list : family"
 alias trash='sudo rm -rf /home/.Trash-0'
+
+#pass#
+alias pass-update='pass git push -u --all'
+alias pass-key='gpg --list-secret-keys'
 
 #quick#
 alias H='start-hyprland'
@@ -71,6 +74,8 @@ alias insta='instagram-cli chat  -u anastasiapsalti'
 alias www="cha -V"
 alias ytdl="youtube-dl --no-cache-dir"
 alias z='fzf -m --preview="bat --color=always {}"'
+alias pipes='pipes.sh -t 1'
+alias zvim='nvim $(z)'
 
 #edit#
 alias editz='nvim ~/.zshrc'
@@ -80,6 +85,7 @@ alias bnd='nvim ~/bandit'
 #------------------------------------------------------------
 export EDITOR="nvim"
 export VISUAL="nvim"
+export PASSWORD_STORE_CLIP_TIME=120
 plugins=(
   git
   zsh-autosuggestions

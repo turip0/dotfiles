@@ -230,7 +230,7 @@ c.content.notifications.enabled = 'ask'
 # `:prompt-open-download --pdfjs` command (bound to `<Ctrl-p>` by
 # default) can be used in the download prompt.
 # Type: Bool
-c.content.pdfjs = True
+c.content.pdfjs = False
 
 # Enable plugins in Web pages.
 # Type: Bool
@@ -332,7 +332,7 @@ c.tabs.tooltips = False
 # Page to open if :open -t/-b/-w is used without URL. Use `about:blank`
 # for a blank page.
 # Type: FuzzyUrl
-c.url.default_page = 'https://searx.tiekoetter.com/'
+c.url.default_page = 'https://search.brave.com/'
 
 # Search engines which can be used via the address bar.  Maps a search
 # engine name (such as `DEFAULT`, or `ddg`) to a URL with a `{}`
@@ -353,7 +353,7 @@ c.url.default_page = 'https://searx.tiekoetter.com/'
 # the search engine name to the search term, e.g. `:open google
 # qutebrowser`.
 # Type: Dict
-c.url.searchengines = {'DEFAULT': 'https://searx.tiekoetter.com/search?q={}', '!br': 'https://search.brave.com/search?q={}&source=web', '!yt': 'https://www.youtube.com/results?search_query={}', '!gh': 'https://github.com/search?o=desc$q={}&s=stars'}
+c.url.searchengines = {'DEFAULT': 'https://search.brave.com/search?q={}&source=web','!rd': 'https://www.reddit.com/search/?q={}&source=trending&cId=', '!sx': 'https://searx.tiekoetter.com/search?q={}', '!br': 'https://search.brave.com/search?q={}&source=web', '!yt': 'https://www.youtube.com/results?search_query={}', '!gh': 'https://github.com/search?o=desc$q={}&s=stars'}
 
 # Hide the window decoration.  This setting requires a restart on
 # Wayland.
@@ -766,7 +766,12 @@ c.fonts.default_family = ['DepartureMono']
 c.fonts.default_size = '9pt'
 
 # Bindings for normal mode
-config.bind('B', 'bookmark-list')
+config.bind('b', 'bookmark-list')
 config.bind('O', 'open -t https://search.brave.com/search?q-&source=web')
 config.bind('p', 'open -- {clipboard}')
 config.bind('h', 'history')
+
+config.bind('c', 'set content.cookies.accept never')
+config.bind('C', 'set content.cookies.accept all')
+
+config.bind('z', 'spawn --userscript qute-pass --dmenu-invocation wofi -dmenu')

@@ -1,11 +1,3 @@
-ddg:github-cli
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=github-cli
-https://cli.github.com/
-https://github.com/cli/cli#installation
-ddg:clear brave cache from terminal
-https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=clear%20brave%20cache%20from%20terminal
-https://itsfoss.gitlab.io/post/how-to-clear-web-browser-cache-from-commandline-in-linux/
-ddg:skip bootloader for a user in systemd
 https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=skip%20bootloader%20for%20a%20user%20in%20systemd
 https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/10/html/using_systemd_unit_files_to_customize_and_optimize_your_system/optimizing-systemd-to-shorten-the-boot-time
 ddg:how to disable boot for a user in systemd boot
@@ -30,7 +22,6 @@ https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=qute%20browser
 ddg:is qute browser fast
 https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=is%20qute%20browser%20fast
 https://technicalustad.com/lightweight-browser/
-https://www.trapeza-thematon.gr/Mathima/5?handler=AllThemata
 https://www.trapeza-thematon.gr/
 https://www.trapeza-thematon.gr/Thema/14123
 https://www.trapeza-thematon.gr/Thema/14615
@@ -48,3 +39,12 @@ searx:kirby
 https://searx.dresden.network/search?kp=-1&kd=-1&q=kirby
 searx:ola
 https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=ola
+searx:press any key to continue in bash
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=press%20any%20key%20to%20continue%20in%20bash
+https://unix.stackexchange.com/questions/293940/how-can-i-make-press-any-key-to-continue
+searx:stdout control in bash
+https://lite.duckduckgo.com/lite/?kp=-1&kd=-1&q=stdout%20control%20in%20bash
+https://stackoverflow.com/questions/637827/redirect-stderr-and-stdout-in-bash
+searx:black color for qq
+https://www.trapeza-thematon.gr/Thema/14925
+https://www.trapeza-thematon.gr/Mathima/5?handler=AllThemata

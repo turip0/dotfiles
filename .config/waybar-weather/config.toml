@@ -114,7 +114,7 @@
  alt_text = "{{.Current.Units.Temperature}}"
 
 ## Primary tooltip template.
- tooltip = "<b>{{.Current.Condition}}</b> \n Humidity: {{.Current.RelativeHumidity}} {{.Current.Units.Humidity}} \n Feels like: {{.Current.ApparentTemperature}} {{.Current.Units.Temperature}} \n Wind: {{.Current.WindSpeed}} - {{.Current.WindGusts}} {{.Current.Units.WindSpeed}} \n  {{localizedTime .SunriseTime}} -> {{localizedTime .SunsetTime}}"
+ tooltip = "<b>{{.Current.Condition}}</b> \n Humidity: {{.Current.RelativeHumidity}} {{.Current.Units.Humidity}} \n Feels like: {{.Current.ApparentTemperature}} {{.Current.Units.Temperature}} \n Wind: {{.Current.WindSpeed}} - {{.Current.WindGusts}} {{.Current.Units.WindSpeed}} \n {{localizedTime .SunriseTime}} -> {{localizedTime .SunsetTime}}"
 
 ## Alternative tooltip template.
 #

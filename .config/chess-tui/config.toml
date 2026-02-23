@@ -1,7 +1,7 @@
 engine_path = "/usr/bin/gnuchess --uci"
 display_mode = "CUSTOM"
 log_level = "OFF"
-bot_depth = 4
+bot_depth = 2
 selected_skin_name = "Midnight"
 lichess_token = "lip_GxzwKvkEQBE0VDhe6qbW"
 sound_enabled = true

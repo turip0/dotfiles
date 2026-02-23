@@ -41,13 +41,57 @@ for choice in $choices; do
     sudo yay -Scc
     sudo paccache -r
     sudo rm -rf ~/go/pkg
+    sudo rm -rf /var/cache/pac/pkg/*
     ;;
   2)
     brew cleanup
     ;;
   3)
     flatpak uninstall --unused
-    sudo flatpak repair
+    flatpack() {
+      echo 'Working on the system installation at /var/lib/flatpak'
+      echo 'Privileges are required to make changes; assuming --dry-run'
+      for i in {1..10}; do
+        echo "[$i/10] stuff"
+        sleep $((RANDOM % 2)).5
+      done
+      sleep 2
+      echo 'Checking remotes...'
+    }
+
+    # Checks for a progress string "[current/total]". Capture group 1
+    # captures the second number, total.
+    is_progress() { [[ $1 =~ ^\[[0-9]+/([0-9]+)]$ ]]; }
+
+    repair_progress() {
+      # Consume all lines until the first line containing progress is
+      # seen.
+      while read -r p _ && ! is_progress "$p"; do :; done
+
+      total=${BASH_REMATCH[1]}
+
+      {
+        # Output a line to compensate for the previously
+        # consumed progress line.
+        echo
+        # Read all remaining lines and only output when it is a
+        # progress line.
+        while read -r p _; do
+          is_progress "$p" && echo
+        done
+        # All lines have been read. Output one final lines to
+        # get the progress to 100%.
+        echo
+        #      } | dialog --title "Repairing flatpak" --gauge "\nPlease wait..." 8 60 0
+      } | pv \
+        --discard \
+        --line-mode \
+        --name "Repairing flatpack" \
+        --progress \
+        --size "$((total + 1))"
+    }
+
+    flatpack repair | repair_progress
     ;;
   4)
     sudo pacman -Rns $(pacman -Qtdq)
@@ -64,7 +108,24 @@ for choice in $choices; do
     sudo rm -rf ~/.cache/*
     ;;
   8)
-    systemctl --failed
+    clear
+    TEMP=~/.scripts/tmp/tmp
+    touch $TEMP
+    systemctl --failed >$TEMP
+    case $(grep "0" $TEMP) in
+    '0 loaded units listed.')
+      printf "\e[92m┌──────────────────────────────┐\n"
+      printf "│\e[0m  No failed daemons spotted\e[92m   │\n│\e[0m All daemons running properly\e[92m │\n\033[0;36m"
+      printf "\e[92m└──────────────────────────────┘\e[0m\n"
+      ;;
+    *)
+      printf "$(cat $TEMP)\n\033[0;36m"
+      ;;
+    esac
+    read -n 1 -s -r -p "  Press any key to continue "
+    printf "\e[0m\n"
+    clear
+    rm -f $TEMP
     ;;
   9)
     BRAVE_PROFILE_DIR="/home/turip/.config/BraveSoftware/Brave-Browser/Default" #Replace
@@ -83,5 +144,6 @@ for choice in $choices; do
     ;;
   esac
   clear
-  printf "\033[0;35m╭───────────────────────────────────╮\n│\e[92mCache options cleared succesfully!\033[0;35m │\n\033[0;35m└───────────────────────────────────┘\n\e[0m"
 done
+clear
+printf "\u001b[36m╭───────────────────────────────────╮\n│\e[0mCache options cleared succesfully!\u001b[36m │\n└───────────────────────────────────┘\n\e[0m"
