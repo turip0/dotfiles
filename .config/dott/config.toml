@@ -1,0 +1,66 @@
+logo_type = "custom"
+custom_logo_path = "~/.config/dott/ascii-logo.txt"
+#entries2 = []
+entries3 = []
+entries4 = []
+entries5 = []
+
+[structure]
+position = "center"
+
+[[structure.build]]
+module = "logo"
+
+#[[structure.build]]
+#module = "break"
+
+[[structure.build]]
+module = "entries"
+
+[[structure.build]]
+module = "break"
+
+[[structure.build]]
+module = "entries2"
+
+[[structure.build]]
+module = "break"
+
+[[structure.build]]
+module = "clock"
+
+[[structure.build]]
+module = "colors"
+
+[[entries]]
+name = "Neovim"
+command = "nvim"
+
+[[entries]]
+name = "yt"
+command = "gophertube"
+#args = ["-d ~/unorg"]
+
+[[entries]]
+name = "yazi"
+command = "yazi"
+
+[[entries2]]
+name = "zshrc"
+command = "nvim"
+args = ["~/.zshrc"]
+
+[[entries2]]
+name = "clear cache"
+command = "bash"
+args = ["~/.scripts/cache.sh"]
+
+[custom.terminal_colors]
+shape = "circles"
+
+[custom.clock]
+
+[custom.selected]
+
+[custom.break]
+lines = 2

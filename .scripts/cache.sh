@@ -1,5 +1,21 @@
 #!/bin/bash
 #install dependency
+mapfile -t pvv < <(pacman -Qqe | grep -x pv)
+case ${pvv[0]} in
+'pv') ;;
+*)
+  printf "${bold}Do you want to install pv? (y/n)${normal}\n"
+  read -r pvvv
+  case ${pvvv} in
+  'n')
+    exit
+    ;;
+  *)
+    sudo pacman -S pv
+    ;;
+  esac
+  ;;
+esac
 mapfile -t dialogg < <(pacman -Qqe | grep dialog)
 case ${dialogg[0]} in
 'dialog') ;;
@@ -98,7 +114,7 @@ for choice in $choices; do
     ;;
   5)
     rm -f ~/pictures/screenshots/*.log
-    rm -r ~/Thunderbird/ ~/Desktop/ ~/Downloads/
+    rm -r ~/Thunderbird/ ~/Desktop/ ~/Downloads/ ~/go
     ;;
   6)
     sudo rm -rf /home/.Trash-0

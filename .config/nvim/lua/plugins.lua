@@ -3,6 +3,7 @@ return {
 
   { "ingur/floatty.nvim" }, -- terminal (C-t)
 
+  { "nvim-telescope/telescope.nvim" }, -- fzf
   {
     "gisketch/triforce.nvim", --rpg stats (:triforce profile)
     dependencies = { "nvzone/volt" },

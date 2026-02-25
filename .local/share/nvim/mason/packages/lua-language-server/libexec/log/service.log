@@ -1,10 +1,10 @@
-[19:12:47.594][info] [#0:/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:71]: Lua Lsp startup, root: 	/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec
-[19:12:47.594][info] [#0:/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:72]: ROOT:	/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec
-[19:12:47.594][info] [#0:/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:73]: LOGPATH:	/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/log
-[19:12:47.594][info] [#0:/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:74]: METAPATH:	/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/meta
-[19:12:47.595][info] [#0:/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:75]: VERSION:	3.17.1
-[19:12:47.674][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
-[19:12:47.674][info] [#0:script/service/service.lua:145]: 
+[14:02:40.952][info] [#0:/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:71]: Lua Lsp startup, root: 	/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec
+[14:02:40.952][info] [#0:/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:72]: ROOT:	/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec
+[14:02:40.952][info] [#0:/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:73]: LOGPATH:	/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/log
+[14:02:40.952][info] [#0:/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:74]: METAPATH:	/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/meta
+[14:02:40.953][info] [#0:/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/main.lua:75]: VERSION:	3.17.1
+[14:02:41.015][info] [#0:script/proto/proto.lua:260]: Listen Mode: stdio
+[14:02:41.015][info] [#0:script/service/service.lua:145]: 
 ========= Medical Examination Report =========
     --------------- Memory ---------------
         Total: 1.916 MB
@@ -26,7 +26,7 @@
         Holdon:   0
         Waiting:  0
 ==============================================
-[19:12:47.683][error][#0:script/pub/pub.lua:281]: Brave is dead!: [string "package.path  = "/home/turip/dotfiles/.local/..."]:9: module 'brave.log' not found:
+[14:02:41.023][error][#0:script/pub/pub.lua:281]: Brave is dead!: [string "package.path  = "/home/turip/dotfiles/.local/..."]:9: module 'brave.log' not found:
 	no field package.preload['brave.log']
 	no file '/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/script/brave/log.lua'
 	no file '/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/script/brave/log/init.lua'
@@ -46,7 +46,7 @@ stack traceback:
 	(main.lua):85: in main chunk
 	(bootstrap.lua):17: in main chunk
 	[C]: in ?
-[19:12:47.683][error][#0:script/pub/pub.lua:281]: Brave is dead!: [string "package.path  = "/home/turip/dotfiles/.local/..."]:9: module 'brave.log' not found:
+[14:02:41.023][error][#0:script/pub/pub.lua:281]: Brave is dead!: [string "package.path  = "/home/turip/dotfiles/.local/..."]:9: module 'brave.log' not found:
 	no field package.preload['brave.log']
 	no file '/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/script/brave/log.lua'
 	no file '/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/script/brave/log/init.lua'
@@ -66,7 +66,7 @@ stack traceback:
 	(main.lua):85: in main chunk
 	(bootstrap.lua):17: in main chunk
 	[C]: in ?
-[19:12:47.683][error][#0:script/pub/pub.lua:281]: Brave is dead!: [string "package.path  = "/home/turip/dotfiles/.local/..."]:9: module 'brave.log' not found:
+[14:02:41.023][error][#0:script/pub/pub.lua:281]: Brave is dead!: [string "package.path  = "/home/turip/dotfiles/.local/..."]:9: module 'brave.log' not found:
 	no field package.preload['brave.log']
 	no file '/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/script/brave/log.lua'
 	no file '/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/script/brave/log/init.lua'
@@ -86,7 +86,7 @@ stack traceback:
 	(main.lua):85: in main chunk
 	(bootstrap.lua):17: in main chunk
 	[C]: in ?
-[19:12:47.683][error][#0:script/pub/pub.lua:281]: Brave is dead!: [string "package.path  = "/home/turip/dotfiles/.local/..."]:9: module 'brave.log' not found:
+[14:02:41.023][error][#0:script/pub/pub.lua:281]: Brave is dead!: [string "package.path  = "/home/turip/dotfiles/.local/..."]:9: module 'brave.log' not found:
 	no field package.preload['brave.log']
 	no file '/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/script/brave/log.lua'
 	no file '/home/turip/dotfiles/.local/share/nvim/mason/packages/lua-language-server/libexec/script/brave/log/init.lua'

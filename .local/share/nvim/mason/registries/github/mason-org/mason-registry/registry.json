@@ -1575,7 +1575,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/bufbuild/buf@v1.65.0",
+      "id": "pkg:github/bufbuild/buf@v1.66.0",
       "asset": [
         {
           "target": "darwin_x64",
@@ -1858,7 +1858,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/cfn-lint@1.44.0"
+      "id": "pkg:pypi/cfn-lint@1.45.0"
     },
     "bin": {
       "cfn-lint": "pypi:cfn-lint"
@@ -5734,7 +5734,7 @@
     "languages": [],
     "categories": [],
     "source": {
-      "id": "pkg:github/cli/cli@v2.87.2",
+      "id": "pkg:github/cli/cli@v2.87.3",
       "asset": [
         {
           "target": "darwin_x64",
@@ -6467,7 +6467,7 @@
       "Formatter"
     ],
     "source": {
-      "id": "pkg:github/incu6us/goimports-reviser@v3.12.5",
+      "id": "pkg:github/incu6us/goimports-reviser@v3.12.6",
       "asset": [
         {
           "target": "darwin_x64",
@@ -11099,7 +11099,7 @@
       "Linter"
     ],
     "source": {
-      "id": "pkg:pypi/oelint-adv@9.4.0"
+      "id": "pkg:pypi/oelint-adv@9.4.1"
     },
     "bin": {
       "oelint-adv": "pypi:oelint-adv"
@@ -14079,7 +14079,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:github/rvben/rumdl@v0.1.25",
+      "id": "pkg:github/rvben/rumdl@v0.1.27",
       "asset": [
         {
           "target": "darwin_arm64",
@@ -15451,7 +15451,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:gem/sorbet@0.6.12957",
+      "id": "pkg:gem/sorbet@0.6.12959",
       "supported_platforms": [
         "unix"
       ]
@@ -17779,7 +17779,7 @@
       "LSP"
     ],
     "source": {
-      "id": "pkg:npm/@typescript/native-preview@7.0.0-dev.20260223.1"
+      "id": "pkg:npm/@typescript/native-preview@7.0.0-dev.20260224.1"
     },
     "bin": {
       "tsgo": "npm:tsgo"
@@ -18304,7 +18304,7 @@
     ],
     "categories": [],
     "source": {
-      "id": "pkg:github/astral-sh/uv@0.10.4",
+      "id": "pkg:github/astral-sh/uv@0.10.5",
       "asset": [
         {
           "target": "darwin_x64",
